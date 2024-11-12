@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"key_scan\startup_stm32f429xx.o"
+"key_scan\main.o"
+"key_scan\gpio.o"
+"key_scan\stm32f4xx_it.o"
+"key_scan\stm32f4xx_hal_msp.o"
+"key_scan\stm32f4xx_hal_tim.o"
+"key_scan\stm32f4xx_hal_tim_ex.o"
+"key_scan\stm32f4xx_hal_rcc.o"
+"key_scan\stm32f4xx_hal_rcc_ex.o"
+"key_scan\stm32f4xx_hal_flash.o"
+"key_scan\stm32f4xx_hal_flash_ex.o"
+"key_scan\stm32f4xx_hal_flash_ramfunc.o"
+"key_scan\stm32f4xx_hal_gpio.o"
+"key_scan\stm32f4xx_hal_dma_ex.o"
+"key_scan\stm32f4xx_hal_dma.o"
+"key_scan\stm32f4xx_hal_pwr.o"
+"key_scan\stm32f4xx_hal_pwr_ex.o"
+"key_scan\stm32f4xx_hal_cortex.o"
+"key_scan\stm32f4xx_hal.o"
+"key_scan\stm32f4xx_hal_exti.o"
+"key_scan\system_stm32f4xx.o"
+--strict --scatter "Key_Scan\Key_Scan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Key_Scan.map" -o Key_Scan\Key_Scan.axf

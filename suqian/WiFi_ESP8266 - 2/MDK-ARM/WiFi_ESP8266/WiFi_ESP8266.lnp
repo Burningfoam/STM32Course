@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"wifi_esp8266\startup_stm32f429xx.o"
+"wifi_esp8266\main.o"
+"wifi_esp8266\gpio.o"
+"wifi_esp8266\usart.o"
+"wifi_esp8266\stm32f4xx_it.o"
+"wifi_esp8266\stm32f4xx_hal_msp.o"
+"wifi_esp8266\stm32f4xx_hal_tim.o"
+"wifi_esp8266\stm32f4xx_hal_tim_ex.o"
+"wifi_esp8266\stm32f4xx_hal_uart.o"
+"wifi_esp8266\stm32f4xx_hal_rcc.o"
+"wifi_esp8266\stm32f4xx_hal_rcc_ex.o"
+"wifi_esp8266\stm32f4xx_hal_flash.o"
+"wifi_esp8266\stm32f4xx_hal_flash_ex.o"
+"wifi_esp8266\stm32f4xx_hal_flash_ramfunc.o"
+"wifi_esp8266\stm32f4xx_hal_gpio.o"
+"wifi_esp8266\stm32f4xx_hal_dma_ex.o"
+"wifi_esp8266\stm32f4xx_hal_dma.o"
+"wifi_esp8266\stm32f4xx_hal_pwr.o"
+"wifi_esp8266\stm32f4xx_hal_pwr_ex.o"
+"wifi_esp8266\stm32f4xx_hal_cortex.o"
+"wifi_esp8266\stm32f4xx_hal.o"
+"wifi_esp8266\stm32f4xx_hal_exti.o"
+"wifi_esp8266\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "WiFi_ESP8266\WiFi_ESP8266.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WiFi_ESP8266.map" -o WiFi_ESP8266\WiFi_ESP8266.axf

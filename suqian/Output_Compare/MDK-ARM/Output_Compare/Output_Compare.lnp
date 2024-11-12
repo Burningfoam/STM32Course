@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"output_compare\startup_stm32f429xx.o"
+"output_compare\main.o"
+"output_compare\gpio.o"
+"output_compare\tim.o"
+"output_compare\stm32f4xx_it.o"
+"output_compare\stm32f4xx_hal_msp.o"
+"output_compare\stm32f4xx_hal_tim.o"
+"output_compare\stm32f4xx_hal_tim_ex.o"
+"output_compare\stm32f4xx_hal_rcc.o"
+"output_compare\stm32f4xx_hal_rcc_ex.o"
+"output_compare\stm32f4xx_hal_flash.o"
+"output_compare\stm32f4xx_hal_flash_ex.o"
+"output_compare\stm32f4xx_hal_flash_ramfunc.o"
+"output_compare\stm32f4xx_hal_gpio.o"
+"output_compare\stm32f4xx_hal_dma_ex.o"
+"output_compare\stm32f4xx_hal_dma.o"
+"output_compare\stm32f4xx_hal_pwr.o"
+"output_compare\stm32f4xx_hal_pwr_ex.o"
+"output_compare\stm32f4xx_hal_cortex.o"
+"output_compare\stm32f4xx_hal.o"
+"output_compare\stm32f4xx_hal_exti.o"
+"output_compare\system_stm32f4xx.o"
+--strict --scatter "Output_Compare\Output_Compare.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Output_Compare.map" -o Output_Compare\Output_Compare.axf
