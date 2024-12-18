@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: bkrc mycomputer, mycomputer, LIC=D0D7S-LHQ3W-9UK4U-S22YC-RQ76Q-6J00F
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  D:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.6.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\12154\Desktop\32\Blue_Brdge_Embedded\test_code\Emb_Twelve\MDK-ARM\lanqiao_twelve.uvprojx
+Project File Date:  01/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil\ARM\ARMCC\Bin'
+Build target 'lanqiao_twelve'
+compiling BSP_TEST.c...
+..\BSP\BSP_Inc\BSP_TEST.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\BSP_Inc\BSP_key.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\BSP_Src\BSP_TEST.c(94): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  											CNBR_cost+=0.5;
+..\BSP\BSP_Src\BSP_TEST.c(95): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  											VNBR_cost+=0.5;
+..\BSP\BSP_Src\BSP_TEST.c(114): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  													CNBR_cost-=0.5;
+..\BSP\BSP_Src\BSP_TEST.c(115): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  													VNBR_cost-=0.5;
+..\BSP\BSP_Src\BSP_TEST.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=21300 RO-data=5304 RW-data=52 ZI-data=2116  
+FromELF: creating hex file...
+"lanqiao_twelve\lanqiao_twelve.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil.STM32G4xx_DFP.1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_lanqiao_twelve
+  D:\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\keil\ARM\PACK\Keil\STM32G4xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
